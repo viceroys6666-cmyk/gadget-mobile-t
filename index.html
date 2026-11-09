@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gadget Mobile .T — Téléphones, accessoires et services</title>
+<style>
+:root{--blue:#0b5fff;--dark:#0b1220;--light:#f6f8ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#111;background:#fff;line-height:1.6}
+header{background:var(--dark);color:#fff;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:22px;font-weight:bold}
+.logo span{color:#4da3ff}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
+nav a:hover{color:#4da3ff}
+.hero{background:linear-gradient(135deg,#0b1220,#123a7a);color:#fff;padding:70px 24px;text-align:center}
+.hero h1{font-size:40px;margin-bottom:14px}
+.hero p{max-width:650px;margin:0 auto 24px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:13px 24px;border-radius:8px;text-decoration:none;font-weight:bold}
+.btn:hover{filter:brightness(1.1)}
+section{padding:55px 24px;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:30px;color:var(--dark)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--light);border-radius:14px;padding:24px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.card h3{margin-bottom:10px;color:var(--blue)}
+.contact{background:var(--light)}
+form{max-width:560px;margin:auto;display:grid;gap:14px}
+input,textarea{padding:12px;border:1px solid #c9d4e8;border-radius:8px;width:100%;font-size:16px}
+footer{background:var(--dark);color:#cfd8e8;text-align:center;padding:24px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Gadget Mobile <span>.T</span></div>
+<nav>
+<a href="#produits">Produits</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<div class="hero">
+<h1>Gadget Mobile .T</h1>
+<p>Votre boutique pour smartphones, accessoires, réparations et solutions mobiles. Qualité, conseils et service rapide.</p>
+<a class="btn" href="#contact">Nous contacter</a>
+</div>
+<section id="produits">
+<h2>Nos produits</h2>
+<div class="cards">
+<div class="card"><h3>Smartphones</h3><p>Une sélection de téléphones neufs et reconditionnés, avec garantie et conseils personnalisés.</p></div>
+<div class="card"><h3>Accessoires</h3><p>Coques, chargeurs, écouteurs, batteries externes, câbles et protections d’écran.</p></div>
+<div class="card"><h3>Objets connectés</h3><p>Montres connectées, enceintes, écouteurs sans fil et accessoires intelligents.</p></div>
+</div>
+</section>
+<section id="services">
+<h2>Nos services</h2>
+<div class="cards">
+<div class="card"><h3>Réparation mobile</h3><p>Remplacement d’écran, batterie, connecteur de charge et diagnostic rapide.</p></div>
+<div class="card"><h3>Transfert de données</h3><p>Migration de vos contacts, photos et applications vers votre nouveau téléphone.</p></div>
+<div class="card"><h3>Conseil &amp; configuration</h3><p>Choix du modèle adapté à votre budget et configuration complète de votre appareil.</p></div>
+</div>
+</section>
+<section id="contact" class="contact">
+<h2>Contactez-nous</h2>
+<form onsubmit="event.preventDefault();alert('Merci ! Votre message a été envoyé.');">
+<input type="text" placeholder="Votre nom" required>
+<input type="email" placeholder="Votre email" required>
+<input type="tel" placeholder="Votre téléphone">
+<textarea rows="5" placeholder="Votre message" required></textarea>
+<button class="btn" type="submit">Envoyer</button>
+</form>
+</section>
+<footer><p>© 2026 Gadget Mobile .T — Tous droits réservés.</p></footer>
+</body>
+</html>
